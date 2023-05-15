@@ -1,30 +1,34 @@
 # Hangman Game API Challenge 
 
-You are tasked with developing a HTTP RESTful API for a Hangman game. The API should allow players to interact with a game by guessing letters and retrieving game information. The API endpoints should handle the game logic and provide responses accordingly.
+This task is to develop a HTTP RESTful API for a Hangman game. The API should allow players to create and retrieve a game, along with modifying the game's state by guessing letters.  
  
-The game can be developed with C#, Java, Javascript or Python and the codebase should be available through a public Github repository.
+The API can be developed with C#, Java, Javascript or Python and the codebase should be available through a public Github repository.
  
 ## Requirements:
-- The API should be implemented using RESTful principles.
-- The game should implement the standard rules of Hangman, including the number of attempts allowed and updating the game state based on correct or incorrect guesses.
-- The game should track the list of incorrect guesses made by the player.
+- The API should be created using HTTP and RESTful principles.
+- The game should allow a maximum of 6 incorrect guesses.
+- The API should track the list of incorrect guesses game for a game.
+- The game should be completed (or marked as `won`) if all of the letters in the word have been correctly guessed and the remaining attempts is above 0.
+- The game should be not completed (or marked as `lost`) if the remaining attempts reaches 0.
 - The API should support the following endpoints:
  
 `POST /games/`  
 Starts a new game of Hangman. This endpoint should initialize a new game with a word and return a game ID.
 
 `GET /games/{game_id}`  
-Retrieves the current state of the game identified by the provided game_id. The response should include the word with masked letters, the incorrect guesses made so far, the number of remaining attempts, and the game status (e.g. `in progress,` `won` or `lost`).
+Retrieves the current state of the game identified by the provided `game_id`. The response should include the word with masked letters, the incorrect guesses made so far, the number of remaining attempts, and the game status (e.g. `in progress,` `won` or `lost`).
 
 `POST /games/{game_id}/guesses`  
-Allows the player to make a letter guess for the game identified by game_id. The guess should be submitted as the request body in JSON format, containing the guessed letter. The response should include the updated game state after the guess.
+Allows the player to make a letter guess for the game identified by `game_id`. The guess should be submitted as the request body in JSON format, containing the guessed letter. The response should include the updated game state after the guess.
 
 ## Example requests
+
+The below examples are just suggestions, request and responses can be tailored per submission.
  
 ### Starting a new game
  
 Request: POST /games  
-Response: 
+Response: 201  
 ```
 { "game_id": "1234567890" }
 ```
@@ -32,7 +36,7 @@ Response:
 ### Retrieving game state
  
 Request: GET /games/1234567890  
-Response:  
+Response: 200  
 ```
 {
   "word": "_ _ _ _ _",
@@ -48,7 +52,7 @@ Request body:
 ```
 { "letter": "A" }  
 ```
-Response:  
+Response: 201   
 ```
 {
   "word": "_ A _ _ _",
@@ -59,13 +63,12 @@ Response:
 ```
 
 ## Notes 
-- You can choose to store the game state in memory or use a mechanism for persistance like a database or file.
-- This exercise is designed to permit a variation of answers, you can tailor your code 
+- The implementation can store the game state in memory or use a persistence mechanism like a database or file.
+- The exercise allows for variation in the answers, giving flexibility in the code.
 
-## Stretch
-
+## Stretch/Optional
 - The game should handle both uppercase and lowercase letters as valid guesses.
-- The API should return appropriate error responses for invalid game IDs, repeated guesses, or any other invalid requests. 
-- The submitted repository should include some brief details within a README.md
-- There is some unit test coverage.
-- There is an API to delete an existing game using the DELETE HTTP Method.
+- The API should return appropriate error responses for invalid request body or game IDs.
+- The submitted repository should include a brief README.md file in the root directory.
+- The code should have unit test coverage.
+- Implement an endpoint to delete an existing game using the DELETE HTTP method.
