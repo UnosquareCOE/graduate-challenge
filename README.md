@@ -1,15 +1,17 @@
 # Hangman Game API Challenge 
 
-This task is to develop a HTTP RESTful API for a Hangman game. The API should allow players to create and retrieve a game, along with modifying the game's state by guessing letters.  
+This task is to complete a HTTP RESTful API for a Hangman game. The API should allow players to create and retrieve a game, along with modifying the game's state by guessing letters.  
  
 The API can be developed with C#, Java, Javascript or Python and the codebase should be available through a public Github repository.
  
 ## Requirements:
 - The API should be created using HTTP and RESTful principles.
-- The game should allow a maximum of 6 incorrect guesses.
-- The API should track the list of incorrect guesses game for a game.
+- The API should allow creation of a game and during creation will select from a pre-defined set of words.
+- The game should allow a maximum of 6 incorrect letter guesses.
+- The API should track the list of incorrect letter guesses game for a game.
 - The game should be completed (or marked as `won`) if all of the letters in the word have been correctly guessed and the remaining attempts is above 0.
 - The game should be not completed (or marked as `lost`) if the remaining attempts reaches 0.
+- If the game is not in progress then a guess cannot be made.
 - The API should support the following endpoints:
  
 `POST /games/`  
@@ -30,7 +32,7 @@ The below examples are just suggestions, request and responses can be tailored p
 Request: POST /games  
 Response: 201  
 ```
-{ "game_id": "1234567890" }
+"1234567890"
 ```
 
 ### Retrieving game state
