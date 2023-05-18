@@ -66,6 +66,7 @@ Response: 201
 
 ## Testing endpoints
 Endpoints can be tested using Postman, available here: https://www.postman.com/
+
 A recommended tutorial can be found here: https://www.guru99.com/postman-tutorial.html
 
 
