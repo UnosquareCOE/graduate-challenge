@@ -64,6 +64,11 @@ Response: 201
 }
 ```
 
+## Testing endpoints
+Endpoints can be tested using Postman, available here: https://www.postman.com/
+A recommended tutorial can be found here: https://www.guru99.com/postman-tutorial.html
+
+
 ## Notes 
 - The implementation can store the game state in memory or use a persistence mechanism like a database or file.
 - The exercise allows for variation in the answers, giving flexibility in the code.
