@@ -20,6 +20,7 @@ The recommended approach for starting this exercise is to:
 - The API should allow creation of a game and during creation will select from a pre-defined set of words.
 - The game should allow a maximum of 6 incorrect letter guesses.
 - The API should track the list of incorrect letter guesses game for a game.
+- The game word returned in the API should unmask characters as correct guesses have been made.
 - The game should be completed (or marked as `won`) if all of the letters in the word have been correctly guessed and the remaining attempts is above 0.
 - The game should be not completed (or marked as `lost`) if the remaining attempts reaches 0.
 - If the game is not in progress then a guess cannot be made.
