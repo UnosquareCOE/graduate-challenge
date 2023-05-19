@@ -38,7 +38,7 @@ Allows the player to make a letter guess for the game identified by `game_id`. T
 
 The below examples are just suggestions, request and responses can be tailored per submission.
  
-### Starting a new game
+### Starting/Creating a new game
  
 NOTE: the response below is just for demonstrative purposes, calling this API will return a different identifier each time.
 
@@ -48,7 +48,7 @@ Response: 201
 "8dfff98b-976a-4141-9a96-38fb86522daf"
 ```
 
-### Retrieving game state
+### Retrieving current game state
 
 NOTE: the ID in the path we use is from the game we have created, it will be different for each game created.  
 
@@ -63,7 +63,7 @@ Response: 200
 }
 ```
 
-### Make a guess
+### Make a guess for a game
 
 NOTE: the ID in the path we use is from the game we have created, it will be different for each game created.  
 
@@ -84,17 +84,25 @@ Response: 201
 
 ## Running the application
 
-Platform specific runtimes and guides can be found within the repository folders; however once the application is running the API usage is the same across the languages.
+Platform specific runtimes and guides can be found within the repository folders; however once the application is running the API usage is the same across the languages. All of the hangman APIs run on port 4567 and can be accessed from http://localhost:4567
 
-We recommend using [Postman](https://www.postman.com/) for making the requests above, 
+We recommend using [Postman](https://www.postman.com/downloads/?utm_source=postman-home) for making the requests above. Once postman is installed, you can skip the account creation and you will be presented with a user interface similar to this:
 
-Endpoints can be tested using Postman, available here: https://www.postman.com/
+![postman_home.png](/images/postman_home.png)
 
-A recommended tutorial can be found here: https://www.guru99.com/postman-tutorial.html
+At this point if you select `New` from the top ribbon and then select `HTTP Request`:
+
+![postman_new_http.png](/images/postman_new_http.png)
+
+You should be presented with an empty HTTP request to be filled out. At this point using the example requests and requirements above you can call the APIs (provided the application is running). An example of how a successful request would look us:
+
+![postman_example_request.png](/images/postman_example_request.png)
+
+NOTE: If interested additional tutorials for postman can be found here: https://www.guru99.com/postman-tutorial.html
 
 ## Notes 
 - The exercise allows for variation in the answers or adjustments to the existing codebase, this is to allow flexibility for answers.
-- The games are held in memory, as a result when an application is stopped or reloaded the collection of games will be cleared also. 
+- The created games are held in memory, as a result when an application is stopped or reloaded the existing games will be cleared also. Subsequently games would need to be re-created with the POST /games/ API endpoint.
 
 ## Stretch
 - The game should handle both uppercase and lowercase letters as valid guesses.
