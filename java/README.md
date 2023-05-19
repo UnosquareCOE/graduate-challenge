@@ -7,16 +7,16 @@ In this partial implementation the technologies used are:
   - Spark is a micro web framework that is used to expose API endpoints.
 - [Gson](https://github.com/google/gson) 
   - GSON is a framework from google that we use to convert to & from JSON.
+- JUnit version 4
 
 ## How to: Run Application
 
-- Please refer to the specific section that matches your machine! Windows or macOs/Linux
-- Please skip sections that you already have the following installed:
+- Please refer to the specific section that matches your machine! Windows or macOS/Linux
+- Please skip Installer sections if you already have the following installed:
   - Java 17
   - Gradle
 
-
-#### Installer via Windows
+### Installer via Windows
 
 1. Install Java 17
 
@@ -72,8 +72,7 @@ Verify the Gradle installation by running the following command: `gradle --versi
 
 You should see the Gradle version information, confirming that Gradle is installed on your Windows machine.
 
-
-#### Installer via macOs/Linux
+### Installer via macOs/Linux
 
 Follow the steps below to install Gradle and Java 17 via SDKMAN:
 
@@ -112,18 +111,17 @@ After the installation completes, verify the installation by running:
 
 You should see the Gradle version information, confirming that Gradle is installed and available.
 
-### Running the Java Application
+## Running the Java Application
 
 To run the Java service using the Gradle wrapper, follow these steps:
 
-- Navigate to the root directory of your Java service project in the terminal. 
+- Navigate to the root directory of your Java service project in the terminal/command line. For this repository the command would be:
   - `cd java`
 
 1. Run the following command to install the services dependencies: `gradle dependencies`
 2. Run the following command to start up the application: `gradle run`
 
 
-The app should now start running on: `http://localhost:4567`
+The app should now be available at: `http://localhost:4567`
 
 Happy coding :) 
-
