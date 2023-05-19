@@ -37,7 +37,7 @@ Verify the OpenJDK installation by running the following command:
 
     java -version
 
-2. Install Gradle
+2. Install Gradle (this step is optional, if Gradle not installed `./gradlew` must replace `gradle` for running the application )
 
 To install Gradle on Windows, follow these steps:
 
@@ -99,7 +99,7 @@ To verify that Java 17 is installed successfully, run the following command:
 
 You should see the Java version information, indicating that Java 17 is now the default version.
 
-3. Install Gradle 
+3. Install Gradle (this step is optional, if Gradle not installed `./gradlew` must replace `gradle` for running the application )
 
 With SDKMAN, you can easily install Gradle. Execute the following command to install Gradle:
 
@@ -120,6 +120,7 @@ To run the Java service using the Gradle wrapper, follow these steps:
 
 1. Run the following command to install the services dependencies: `gradle dependencies`
 2. Run the following command to start up the application: `gradle run`
+3. (optional) Run the following command to execute the unit tests: `gradle test`
 
 
 The app should now be available at: `http://localhost:4567`
