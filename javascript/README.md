@@ -26,7 +26,7 @@ To install Node 18 on Windows or macOS, follow these steps:
 
 - Make sure the LTS (long-term support) tab is selected 
 
-- Click on the installer than is relevant for your computer. A download should begin with the pkg/msi.
+- Click on the installer that is relevant for your computer. A download should begin with the pkg/msi.
 
 - Follow the installation wizard with the default settings selected.
 

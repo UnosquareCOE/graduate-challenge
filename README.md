@@ -2,7 +2,7 @@
 
 This task is to complete a HTTP RESTful API for a Hangman game. The API should allow players to create and retrieve a game, along with modifying the game's state by guessing letters. The development of the API has been started but the logic to make a guess is pending.
  
-The API can be developed with C#, Java, Javascript or Python and the codebase should be available through a public Github repository.
+The API can be developed with C# (using dotnet), Java, Javascript or Python and the codebase should be available through a public Github repository.
 
 ## Recommended approach:
 
