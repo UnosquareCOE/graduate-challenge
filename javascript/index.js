@@ -5,7 +5,6 @@ const { json, urlencoded } = require("body-parser");
 const { v4: uuid } = require("uuid");
 
 const app = express();
-
 app.use(cors());
 app.use(json());
 app.use(morgan("tiny"));
@@ -15,6 +14,16 @@ const words = ["Banana", "Canine", "Unosquare", "Airport"];
 const games = {};
 
 const retrieveWord = () => words[Math.floor(Math.random(words.length - 1))];
+
+const clearUnmaskedWord = (game) => {
+   
+    const gameToReturn = { 
+        ...game,
+    };
+    delete gameToReturn.unmaskedWord;
+
+    return gameToReturn;
+}
 
 app.post("/games", (req, res) => {
   const newGameWord = retrieveWord();
@@ -41,7 +50,7 @@ app.get("/games/:gameId", (req, res) => {
         return res.sendStatus(404); 
     }
 
-    res.status(200).json(game);
+    res.status(200).json(clearUnmaskedWord(game));
 });
 
 app.post("/games/:gameId/guesses", (req, res) => {
@@ -59,7 +68,11 @@ app.post("/games/:gameId/guesses", (req, res) => {
         })
     }
 
-    return res.status(200).json(game);
+    // todo: add logic for making a guess, modifying the game and updating the status
+
+    return res.status(200).json(clearUnmaskedWord(game));
 });
 
-app.listen(3000);
+
+
+app.listen(4567);

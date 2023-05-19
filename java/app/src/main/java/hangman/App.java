@@ -74,7 +74,7 @@ public class App {
     }
 
     private static String retrieveWord() {
-        Random rand = new Random();
+        var rand = new Random();
         return words.get(rand.nextInt(words.size() - 1));
     }
 }
