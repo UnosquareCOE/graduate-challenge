@@ -5,7 +5,7 @@ In this partial implementation the technologies used are:
 - dotnet core 6
 - [ASP.NET Core](https://github.com/dotnet/aspnetcore)
 - [XUnit](https://xunit.net/) 
-  - Jest is a dotnet testing framework.
+  - XUnit is a dotnet testing framework.
 
 ## How to: Run Application
 
