@@ -109,4 +109,7 @@ NOTE: If interested additional tutorials for postman can be found here: https://
 - The API should return appropriate error responses for invalid request body or game IDs.
 - The submitted repository should include a brief README.md file in the root directory.
 - The code should have unit test coverage.
-- Implement an endpoint to remove an existing game using the DELETE HTTP method.
+- Implement an endpoint to remove an existing game using the DELETE HTTP method `DELETE /games/{game_id}`. An example is:  
+
+Request: DELETE /games/8dfff98b-976a-4141-9a96-38fb86522daf  
+Response: 204  

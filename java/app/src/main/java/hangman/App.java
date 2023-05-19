@@ -39,7 +39,7 @@ public class App {
 
     public static UUID createGame() {
         var newGameId = UUID.randomUUID();
-        var newGame = new Game(6, retrieveWord());
+        var newGame = new Game(3, retrieveWord());
 
         games.put(newGameId, newGame);
 

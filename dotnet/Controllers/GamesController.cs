@@ -19,7 +19,7 @@ public class GamesController : ControllerBase
         var newGameId = Guid.NewGuid();
         var newGame = new Game
         {
-            RemainingGuesses = 6,
+            RemainingGuesses = 3,
             UnmaskedWord = newGameWord,
             Word = Regex.Replace(newGameWord, @"[a-zA-Z0-9_]", "_"),
             Status = "In Progress",

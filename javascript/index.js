@@ -29,7 +29,7 @@ app.post("/games", (req, res) => {
   const newGameWord = retrieveWord();
   const newGameId = uuid();
   const newGame = {
-    remainingGuesses: 6,
+    remainingGuesses: 3,
     unmaskedWord: newGameWord,
     word: newGameWord.replace(/[^a-zA-Z0-9]/, "_"),
     status: "In Progress",
