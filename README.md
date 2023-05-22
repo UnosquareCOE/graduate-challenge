@@ -2,7 +2,9 @@
 
 This task is to complete a HTTP RESTful API for a Hangman game. The API should allow players to create and retrieve a game, along with modifying the game's state by guessing letters. The development of the API has been started but the logic to make a guess is pending.
  
-The API can be developed with C# (using .NET 6), Java (version 17), Javascript (version 18) or Python (3.11.x) and the codebase should be available through a public Github repository.
+The API can be developed with C# (using .NET 6), Java (version 17), Javascript (node version 18) or Python (version 3.11.x) and the codebase should be available through a public Github repository.
+
+The objective with the challenge isn't to necessarly get everything completely correct, there are objectives but the important aspects are to check you can read through requirements, understand the problem, review existing applications, configure your development environment and use github.
 
 ## Recommended approach:
 
@@ -19,7 +21,7 @@ The recommended approach for starting this exercise is to:
 - The API should be created using HTTP and RESTful principles.
 - The API should allow creation of a game and during creation will select from a pre-defined set of words.
 - The game should allow a maximum of 6 incorrect letter guesses.
-- The API should track the list of incorrect letter guesses game for a game.
+- The API should track the list of incorrect letter guesses game for a game. A specific letter can only be used once and the API should respond with an error if a user attempts to re-use a letter.
 - The game word returned in the API should unmask characters as correct guesses have been made.
 - The game should be completed (or marked as `won`) if all of the letters in the word have been correctly guessed and the remaining attempts is above 0.
 - The game should be not completed (or marked as `lost`) if the remaining attempts reaches 0.
