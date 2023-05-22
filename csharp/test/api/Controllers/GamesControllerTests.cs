@@ -1,18 +1,33 @@
+using api.Utils;
 using dotnet.Controllers;
+using Microsoft.AspNetCore.Mvc;
 
 namespace api.test.Controllers;
 
+public class MockIdentifierGenerator : IIdentifierGenerator
+{
+    private readonly Guid _newId;
+
+    public MockIdentifierGenerator(Guid newId) => _newId = newId;
+
+    public Guid RetrieveIdentifier() => _newId;
+}
+
 public class GamesControllerTests
 {
-    private readonly GamesController _gamesController;
-
-    public GamesControllerTests() => _gamesController = new GamesController();
-
     [Fact]
     public void CreateGame_WhenCalled_ReturnsValidIdentifier()
     {
-        var id = _gamesController.CreateGame();
+        var newId = Guid.NewGuid();
         
-        Assert.NotEqual(Guid.Empty, id);
+        var gamesController = RetrieveController(new MockIdentifierGenerator(newId));
+        
+        var response = gamesController.CreateGame();
+        
+        Assert.IsType<OkObjectResult>(response.Result);
+        Assert.Equal(newId, ((OkObjectResult)response.Result).Value);
     }
+    
+    private static GamesController RetrieveController(IIdentifierGenerator identifierGenerator) =>
+        new GamesController(identifierGenerator);
 }

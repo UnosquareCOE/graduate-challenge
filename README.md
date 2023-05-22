@@ -4,13 +4,13 @@ This task is to complete a HTTP RESTful API for a Hangman game. The API should a
  
 The API can be developed with C# (using .NET 6), Java (version 17), Javascript (node version 18) or Python (version 3.11.x) and the codebase should be available through a public Github repository.
 
-The objective with the challenge isn't to necessarly get everything completely correct, there are objectives but the important aspects are to check you can read through requirements, understand the problem, review existing applications, configure your development environment and use github.
+The primary goal of the challenge is not necessarily to achieve perfect accuracy in all aspects. While there are specific objectives to be met, the key focus lies in assessing your ability to perform the following tasks: comprehending the requirements, understanding the problem at hand, examining existing applications, setting up your development environment, and utilizing GitHub effectively.
 
 ## Recommended approach:
 
 The recommended approach for starting this exercise is to:
 1. Install git onto your computer. See [here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) 
-2. (optional) Create a new github account [here](https://github.com/join), you can also use an existing one. 
+2. (optional) Create a new github account [here](https://github.com/join), you can also use an existing account if you have one. 
 3. Clone this repository and copy the contents of either csharp, java, javascript or python into a new repository for your account.
 4. Follow the specific README.md instructions for the chosen platform to run the application (see README.md inside each language folder).
 5. Follow instructions [here](#Running-the-application) to create games, check the game details and make a guess with the requests detailed below.

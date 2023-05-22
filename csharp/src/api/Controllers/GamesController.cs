@@ -1,4 +1,5 @@
 using System.Text.RegularExpressions;
+using api.Utils;
 using dotnet.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -12,11 +13,15 @@ public class GamesController : ControllerBase
 
     private static readonly IDictionary<Guid, Game> Games = new Dictionary<Guid, Game>();
 
+    private readonly IIdentifierGenerator _identifierGenerator;
+
+    public GamesController(IIdentifierGenerator identifierGenerator) => _identifierGenerator = identifierGenerator;
+    
     [HttpPost]
-    public Guid CreateGame()
+    public ActionResult<Guid> CreateGame()
     {
         var newGameWord = RetrieveWord();
-        var newGameId = Guid.NewGuid();
+        var newGameId = _identifierGenerator.RetrieveIdentifier();
         var newGame = new Game
         {
             RemainingGuesses = 3,
@@ -27,7 +32,7 @@ public class GamesController : ControllerBase
         };
         Games.Add(newGameId, newGame);
 
-        return newGameId;
+        return Ok(newGameId);
     }
     
     [HttpGet("{gameId:guid}")]
