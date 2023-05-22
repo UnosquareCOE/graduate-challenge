@@ -2,14 +2,14 @@
 
 This task is to complete a HTTP RESTful API for a Hangman game. The API should allow players to create and retrieve a game, along with modifying the game's state by guessing letters. The development of the API has been started but the logic to make a guess is pending.
  
-The API can be developed with C# (using dotnet), Java, Javascript or Python and the codebase should be available through a public Github repository.
+The API can be developed with C# (using .NET 6), Java, Javascript or Python and the codebase should be available through a public Github repository.
 
 ## Recommended approach:
 
 The recommended approach for starting this exercise is to:
 1. Install git onto your computer. See [here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) 
 2. (optional) Create a new github account [here](https://github.com/join), you can also use an existing one. 
-3. Copy the contents of either dotnet, java, javascript or python into your new repository.
+3. Copy the contents of either csharp, java, javascript or python into your new repository.
 4. Follow the specific README.md instructions for the chosen platform to run the application.
 5. Follow instructions [here](#Running-the-application) to create games, check the game details and make a guess with the requests detailed below.
 6. Review the guess logic for your chosen platform and update it so that the requirements are fulfilled.
@@ -85,7 +85,7 @@ Response: 201
 
 ## Running the application
 
-Platform specific runtimes and guides can be found within the repository folders; however once the application is running the API usage is the same across the languages. All of the hangman APIs run on port 4567 and can be accessed from http://localhost:4567
+Platform specific runtimes and README guides can be found within the repository platform folders; however once the application is running the API usage is the same across the languages. All of the hangman APIs run on port 4567 and can be accessed from http://localhost:4567
 
 We recommend using [Postman](https://www.postman.com/downloads/?utm_source=postman-home) for making the requests above. Once postman is installed, you can skip the account creation and you will be presented with a user interface similar to this:
 

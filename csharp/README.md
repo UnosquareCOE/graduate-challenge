@@ -1,22 +1,23 @@
-# Dotnet with C# Hangman API 
+# C# with .NET Hangman API 
 
 In this partial implementation the technologies used are:
 
-- dotnet core 6
+- C#
+- .NET 6
 - [ASP.NET Core](https://github.com/dotnet/aspnetcore)
 - [XUnit](https://xunit.net/) 
-  - XUnit is a dotnet testing framework.
+  - XUnit is a .NET testing framework.
 
 ## How to: Run Application
 
 - Please skip Installer sections if you already have the following installed:
-  - dotnet version 6
+  - .NET 6
 
 ### Manual Installation macOS & Windows
 
-1. Install dotnet
+1. Install .NET
 
-To install dotnet 6 on Windows or macOS, follow these steps:
+To install .NET 6 on Windows or macOS, follow these steps:
 
 - Visit the dotnet website at https://dotnet.microsoft.com/en-us/download/dotnet/6.0.
 
@@ -43,10 +44,10 @@ This approach can be more problematic if a problem occurs and requires more term
 
 ## Running the dotnet Application
 
-To run the dotnet service using the .NET runtime, follow these steps:
+To run the service using the .NET runtime, follow these steps:
 
-- Navigate to the root directory of your Javascript service project in the terminal/command line. For this repository the command would be:
-  - `cd dotnet`
+- Navigate to the root directory of your c# service project in the terminal/command line. For this repository the command would be:
+  - `cd csharp`
 
 1. Run the following command to install the services dependencies: `dotnet restore`
 2. Run the following command to start up the application: `dotnet run --project src/api/api.csproj`
