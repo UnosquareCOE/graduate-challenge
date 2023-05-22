@@ -6,7 +6,7 @@ The API can be developed with C# (using .NET 6), Java (version 17), Javascript (
 
 The primary goal of the challenge is not necessarily to achieve perfect accuracy in all aspects. While there are specific objectives to be met, the key focus lies in assessing your ability to perform the following tasks: comprehending the requirements, understanding the problem at hand, examining existing applications, setting up your development environment, and utilizing GitHub effectively.
 
-We recommend spending maximum 2 hours on the challenge (excluding setup); however the time spent is entirely up to the individual.
+We recommend spending a maximum 2 hours on the challenge (excluding setup); however the time spent is entirely up to the individual.
 
 ## Recommended approach:
 
@@ -20,7 +20,7 @@ The recommended approach for starting this exercise is to:
 7. (optional) Review the stretch items [here](#Stretch).
  
 ## Requirements:
-- The API should be created using HTTP and RESTful principles.
+- The API should be created using HTTP, return [JSON (Javascript Object Notation)](https://www.w3schools.com/whatis/whatis_json.asp) and RESTful principles.
 - The API should allow creation of a game and during creation will select from a pre-defined set of words.
 - The game should allow a maximum of 6 incorrect letter guesses.
 - The API should track the list of incorrect letter guesses game for a game. A specific letter can only be used once and the API should respond with an error if a user attempts to re-use a letter.
