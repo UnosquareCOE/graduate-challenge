@@ -6,6 +6,8 @@ The API can be developed with C# (using .NET 6), Java (version 17), Javascript (
 
 The primary goal of the challenge is not necessarily to achieve perfect accuracy in all aspects. While there are specific objectives to be met, the key focus lies in assessing your ability to perform the following tasks: comprehending the requirements, understanding the problem at hand, examining existing applications, setting up your development environment, and utilizing GitHub effectively.
 
+We recommend spending maximum 2 hours on the challenge (excluding setup); however the time spent is entirely up to the individual.
+
 ## Recommended approach:
 
 The recommended approach for starting this exercise is to:
