@@ -37,7 +37,7 @@ To install python 3.11.* you can follow the below steps:
 - type `python --version`
   - You should see `3.11.3` or similar appear.
 
-## Running the Javascript Application
+## Running the Python Application
 
 To run the python service using python & pip, follow these steps:
 
