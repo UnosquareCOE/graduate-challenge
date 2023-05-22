@@ -1,5 +1,5 @@
+using api.Controllers;
 using api.Utils;
-using dotnet.Controllers;
 using Microsoft.AspNetCore.Mvc;
 
 namespace api.test.Controllers;

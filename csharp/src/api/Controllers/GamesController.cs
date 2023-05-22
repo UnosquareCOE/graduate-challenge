@@ -1,9 +1,9 @@
 using System.Text.RegularExpressions;
+using api.Models;
 using api.Utils;
-using dotnet.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace dotnet.Controllers;
+namespace api.Controllers;
 
 [ApiController]
 [Route("[controller]")]

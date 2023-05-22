@@ -1,4 +1,4 @@
-namespace dotnet.Models;
+namespace api.Models;
 
 public class Guess
 {
