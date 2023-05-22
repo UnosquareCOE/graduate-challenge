@@ -85,7 +85,7 @@ Response: 201
 }
 ```
 
-## Running the application
+## Testing the application
 
 Platform specific runtimes and README guides can be found within the repository platform folders; however once the application is running the API usage is the same across the languages. All of the hangman APIs run on port 4567 and can be accessed from http://localhost:4567
 
@@ -103,7 +103,7 @@ You should be presented with an empty HTTP request to be filled out. At this poi
 
 NOTE: If interested additional tutorials for postman can be found here: https://www.guru99.com/postman-tutorial.html
 
-## Development tools
+## Development tooling
 
 For most of the API choices [Visual Studio Code](https://code.visualstudio.com/) is a good choice for minor adjustments, especially if you're running the application via the terminal/command line.
 
