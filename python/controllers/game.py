@@ -1,9 +1,7 @@
-from flask import Flask, jsonify, request, abort
-from werkzeug.exceptions import HTTPException
-import uuid
-import random
+from flask import (Blueprint)
 
-app = Flask(__name__)
+mod = Blueprint('games', __name__, url_prefix='/games')
+
 
 games = {}
 
@@ -23,7 +21,7 @@ def is_valid_guess(guess, game):
         return False
     return True
 
-@app.route('/games/', methods=['POST'])
+@mod.route('/', methods=['POST'])
 def start_game():
     game_id = str(uuid.uuid4())
     word = generate_word()
@@ -34,7 +32,7 @@ def start_game():
     }
     return game_id, 201
 
-@app.route('/games/<string:game_id>', methods=['GET'])
+@mod.route('/<string:game_id>', methods=['GET'])
 def get_game_state(game_id):
     game = games.get(game_id)
     if game is None:
@@ -47,7 +45,7 @@ def get_game_state(game_id):
         "word": masked_word,
     })
 
-@app.route('/games/<string:game_id>/guesses', methods=['POST'])
+@mod.route('/<string:game_id>/guesses', methods=['POST'])
 def make_guess(game_id):
     game = games.get(game_id)
     if game is None:
@@ -66,6 +64,3 @@ def make_guess(game_id):
         "status": "In Progress",
         "word": masked_word,
     })
-
-if __name__ == '__main__':
-    app.run(debug=True, host="0.0.0.0", port=4567)

@@ -6,8 +6,8 @@ In this partial implementation the technologies used are:
 - PIP (python package manager)
 - [Flask](https://flask.palletsprojects.com/en/2.3.x/)
   - Flask is a micro web framework that is used to expose API endpoints.
-- [pytest](https://docs.pytest.org/en/7.3.x/) 
-  - pytest is a Python testing framework.
+- [unittest](https://docs.python.org/3/library/unittest.html) 
+  - unittest is a Python testing framework.
 
 ## How to: Run Application
 
