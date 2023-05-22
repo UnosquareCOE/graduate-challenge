@@ -1,7 +1,10 @@
-from flask import (Blueprint)
+import uuid
+import random
+
+from flask import (Blueprint, abort, jsonify, request)
+from werkzeug.exceptions import HTTPException
 
 mod = Blueprint('games', __name__, url_prefix='/games')
-
 
 games = {}
 
