@@ -101,6 +101,24 @@ You should be presented with an empty HTTP request to be filled out. At this poi
 
 NOTE: If interested additional tutorials for postman can be found here: https://www.guru99.com/postman-tutorial.html
 
+## Development tools
+
+For most of the API choices [Visual Studio Code](https://code.visualstudio.com/) is a good choice for minor adjustments, especially if you're running the application via the terminal/command line.
+
+For language specific tooling the following options exist to facilitate better debugging and more coupled options:
+
+### Python
+[PyCharm Community](https://www.jetbrains.com/pycharm/) is often the go to IDE. 
+
+### C# .NET
+For Windows we typically use [Visual Studio](https://visualstudio.microsoft.com/), a macOS & Linux version does exist (originall Xamarin studio, then adjusted). However we typically recommend using [Rider](https://www.jetbrains.com/rider/) (NOTE: Rider does not have a community edition, it does however have a 30day free trial).
+
+### Javascript
+Visual Studio Code is often the go-to tooling for Javascript, especially when paired with prettier and ESLint plugins. 
+
+### Java
+Most Java developers begin development using Eclipse; however we recommend using [IntelliJ Community](https://www.jetbrains.com/idea/). The support is often better and it's generally a better experience for most tasks.
+
 ## Notes 
 - The exercise allows for variation in the answers or adjustments to the existing codebase, this is to allow flexibility for answers.
 - The created games are held in memory, as a result when an application is stopped or reloaded the existing games will be cleared also. Subsequently games would need to be re-created with the POST /games/ API endpoint.
