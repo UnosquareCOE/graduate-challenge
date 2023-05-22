@@ -111,7 +111,7 @@ For language specific tooling the following options exist to facilitate better d
 [PyCharm Community](https://www.jetbrains.com/pycharm/) is often the go to IDE. 
 
 ### C# .NET
-For Windows we typically use [Visual Studio](https://visualstudio.microsoft.com/), a macOS & Linux version does exist (originall Xamarin studio, then adjusted). However we typically recommend using [Rider](https://www.jetbrains.com/rider/) (NOTE: Rider does not have a community edition, it does however have a 30day free trial).
+For Windows we typically use [Visual Studio](https://visualstudio.microsoft.com/), a macOS & Linux version does exist (originally Xamarin studio, then adjusted). However we typically recommend using [Rider](https://www.jetbrains.com/rider/) (NOTE: Rider does not have a community edition, it does however have a 30 day free trial).
 
 ### Javascript
 Visual Studio Code is often the go-to tooling for Javascript, especially when paired with prettier and ESLint plugins. 
