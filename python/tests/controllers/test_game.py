@@ -1,4 +1,6 @@
 import unittest
+import uuid
+
 from unittest.mock import patch
 from controllers.game import start_game
 
