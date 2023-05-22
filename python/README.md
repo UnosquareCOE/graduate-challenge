@@ -50,8 +50,9 @@ To run the python service using python & pip, follow these steps:
 3. We can start the virtualenv with `source bin/activate` on macOS or Linux and `.\venv\Scripts\activate` on windows.                        
 
 ### Steps to run
-1. Run the following command to start up the application: `python main.py`
-2. (optional) Run the following command to execute the unit tests: `python -m unittest`
+1. Run the following command to install packages: `pip install -r requirements.txt`
+2. Run the following command to start up the application: `python main.py`
+3. (optional) Run the following command to execute the unit tests: `python -m unittest`
 
 The app should now be available at: `http://localhost:4567`
 
