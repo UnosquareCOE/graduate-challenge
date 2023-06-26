@@ -15,7 +15,7 @@ The recommended approach for starting this exercise is to:
 2. (optional) Create a new github account [here](https://github.com/join), you can also use an existing account if you have one. 
 3. Clone this repository and copy the contents of either csharp, java, javascript or python into a new repository for your account.
 4. Follow the specific README.md instructions for the chosen platform to run the application (see README.md inside each language folder).
-5. Follow instructions [here](#Running-the-application) to create games, check the game details and make a guess with the requests detailed below.
+5. Follow instructions [here](#Testing the application) to create games, check the game details and make a guess with the requests detailed below.
 6. Review the guess logic for your chosen platform and update it so that the requirements are fulfilled.
 7. (optional) Review the stretch items [here](#Stretch).
  
